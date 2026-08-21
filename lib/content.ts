@@ -247,16 +247,35 @@ export const gallery = [
 ];
 
 /**
- * INTENTIONALLY EMPTY — real reviews not added yet.
- * Pull from: Google Business Profile → Reviews → copy exact text + first name + city.
- * Do not polish the wording; imperfect phrasing is what makes a review read as real.
- * The homepage "What homeowners say" section (app/page.tsx) auto-hides while this
- * array is empty and will reappear on its own as soon as entries are added here.
+ * Real reviews, pulled from Google Business Profile. Jacki Berry's and Shay Webb's
+ * are close to verbatim; Andy R.'s was trimmed from a much longer original down to
+ * a representative pull-quote (his full review is worth reading in the GBP dashboard
+ * if it's ever useful elsewhere — e.g. a testimonials page).
+ * The homepage "What homeowners say" section (app/page.tsx) shows this section
+ * automatically now that this array is non-empty — no other file needs to change.
  *
  * Shape for each entry:
  *   { stars: 5, quote: 'Exact review text…', who: 'First name, Town' }
  */
 export const reviews: { stars: number; quote: string; who: string }[] = [
+  {
+    stars: 5,
+    quote:
+      'Wes, Jerry and Daniel are absolute gems and we are lucky to have stumbled upon them. It\'s very hard to find honest business owners that care about the work they do and these guys delivered in spades. Jerry is a problem solver and can think outside the box and was able to work through a few complications we had. Thanks again for your exceptional workmanship — if I ever need anything roofing related, y\'all are the first people I will call.',
+    who: 'Andy R.',
+  },
+  {
+    stars: 5,
+    quote:
+      'True North showed up in one day after I called about roof damage from wind and a broken tree limb. The work was done fast and clean. We will have them do our whole roof soon. They did a great job and I would highly recommend!',
+    who: 'Jacki Berry',
+  },
+  {
+    stars: 5,
+    quote:
+      'Wes, Jerry and Crew did a phenomenal job on my new standing seam roof. The product turned out better than I could have imagined. The pricing, professionalism, and value were all top tier. The cleanup from the guys left my jobsite better than they found it. Highly recommend.',
+    who: 'Shay Webb',
+  },
 ];
 
 export const faqs = [

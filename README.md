@@ -65,10 +65,10 @@ cosmetic.
 
 ### Must do
 
-- [ ] **Replace the placeholder reviews.** `lib/content.ts` → `reviews`. Three entries
-      are marked `DRAFT — replace with real Google review`. Copy real reviews from your
-      Google Business Profile **verbatim** — do not clean up the grammar. Imperfect
-      wording is what makes a review read as real. Add the first name and town.
+- [x] **Real reviews are in.** `lib/content.ts` → `reviews` now has 3 real Google
+      reviews (Andy R., Jacki Berry, Shay Webb). Two are close to verbatim; the longest
+      one was trimmed to a pull-quote — see the comment above the array. Add more the
+      same way as they come in from the Google Business Profile.
 - [ ] **Confirm the email address.** `lib/site.ts` → `site.email` currently reads
       `office@truenorthroofingsolutions.com`. Change it if that is not a live inbox.
 - [ ] **Add your Google Business Profile link.** `lib/site.ts` → `site.profiles.google`.
